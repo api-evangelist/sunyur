@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://open.sunyur.com/api (live-observed API auth challenge)
+summary:
+  types: [accessToken]
+  api_key_in: [query]
+  oauth2_flows: []
+  notes: >-
+    Sunyur exposes an enterprise procurement open platform ("聚贤阁") at
+    https://open.sunyur.com. The public API base at https://open.sunyur.com/api
+    rejects unauthenticated calls with resultCode 20111
+    ("accessToken 参数不允许为空" / "the accessToken parameter must not be empty"),
+    confirming a token-based auth model where callers present an accessToken.
+    The developer console API under /front/ is separately session/login gated
+    (code 50003, "请登录后访问" / "login required"). Full credential-provisioning
+    flow (appKey/appSecret exchange) is documented behind the login-gated
+    developer docs at https://open.sunyur.com/front/#/docs and could not be
+    captured verbatim.
+schemes:
+- name: accessToken
+  type: apiKey
+  in: query
+  parameter: accessToken
+  sources: [live-observed https://open.sunyur.com/api]
+  description: >-
+    Access token required on open-platform API calls; passed as the accessToken
+    request parameter. Provisioned through the Sunyur open platform developer
+    console (login required).
+docs: https://open.sunyur.com/front/#/docs

@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://open.sunyur.com/api (live-observed error envelopes)
+format: json-envelope
+envelope:
+  open_api:
+    example_host: https://open.sunyur.com/api
+    fields:
+      success: boolean success flag (false on error)
+      resultCode: string numeric error code
+      resultMessage: human-readable message (zh-CN)
+  console_api:
+    example_host: https://open.sunyur.com/front/
+    fields:
+      success: boolean success flag (false on error)
+      code: string numeric error code
+      errorMessage: human-readable message (zh-CN)
+errors:
+- code: '20111'
+  envelope: open_api
+  message: accessToken 参数不允许为空
+  message_en: The accessToken parameter must not be empty
+  cause: Open-platform API call made without a valid accessToken parameter
+  action: Provide a valid accessToken obtained from the Sunyur open platform console
+  observed_at: https://open.sunyur.com/api
+- code: '50003'
+  envelope: console_api
+  message: 请登录后访问
+  message_en: Please log in before accessing
+  cause: Developer-console API accessed without an authenticated session
+  action: Log in to the Sunyur open platform developer console
+  observed_at: https://open.sunyur.com/front/api/docs
+notes: >-
+  Full error-code registry is published behind the login-gated developer docs at
+  https://open.sunyur.com/front/#/docs; the codes above were observed live and
+  are not exhaustive.

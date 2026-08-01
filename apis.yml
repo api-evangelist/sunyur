@@ -1,8 +1,31 @@
 aid: sunyur
-name: sunyur
-description: sunyur is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Sunyur
+description: >-
+  Sunyur (商越科技 / Beijing Sunyur Network Technology Co., Ltd, 北京商越网络科技有限公司) is a
+  Chinese enterprise procurement digitalization company providing AI-driven
+  procurement solutions for large and medium enterprises. Its products include an
+  intelligent procurement middle-platform (采购中台), an SRM supplier relationship
+  management system, an e-procurement SaaS platform, and a procurement mall
+  (采购商城), helping each customer build a dedicated online, digital, and
+  intelligent enterprise procurement platform to raise efficiency and lower cost.
+  Sunyur operates an open integration platform ("聚贤阁", open.sunyur.com) that
+  connects enterprises to 30+ mainstream e-commerce platforms and 10+ third-party
+  applications through a single accessToken-authenticated API surface. Sunyur is
+  backed by Qiming Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/sunyur/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://img.sunyur.com/158313907762748503.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,10 +34,42 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Procurement
+- SRM
+- E-Procurement
+- Supplier Management
+- Digital Procurement
+- Enterprise Software
+- SaaS
+- B2B
+- China
+- AI
+apis:
+- name: Sunyur Open Platform
+  description: >-
+    Sunyur's enterprise procurement open integration platform ("聚贤阁"). Exposes an
+    accessToken-authenticated API base at https://open.sunyur.com/api that
+    connects buyers to mainstream e-commerce platforms and third-party
+    applications. Public API reference is published behind a login-gated
+    developer console.
+  humanURL: https://open.sunyur.com
+  baseURL: https://open.sunyur.com/api
+  tags:
+  - Procurement
+  - Open Platform
+  - Integration
+  properties:
+  - type: DeveloperPortal
+    url: https://open.sunyur.com
+  - type: Documentation
+    url: https://open.sunyur.com/front/#/docs
+  - type: Authentication
+    url: authentication/sunyur-authentication.yml
+  - type: ErrorCatalog
+    url: errors/sunyur-error-codes.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,4 +77,21 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://sunyur.com
+  url: https://www.sunyur.com
+- type: DeveloperPortal
+  url: https://open.sunyur.com
+- type: Documentation
+  url: https://open.sunyur.com/front/#/docs
+- type: Authentication
+  url: authentication/sunyur-authentication.yml
+- type: ErrorCatalog
+  url: errors/sunyur-error-codes.yml
+- type: DomainSecurity
+  url: security/sunyur-domain-security.yml
+- type: WellKnown
+  url: well-known/sunyur-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

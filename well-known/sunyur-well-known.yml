@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of /.well-known/ on Sunyur hosts
+hosts:
+- host: https://sunyur.com
+  documents:
+  - {path: /.well-known/security.txt, status: 410}
+  - {path: /.well-known/openid-configuration, status: 410}
+  - {path: /.well-known/api-catalog, status: 410}
+  - {path: /.well-known/ai-plugin.json, status: 410}
+- host: https://open.sunyur.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+result: none
+notes: >-
+  The apex sunyur.com returns 410 Gone (Aliyun/Tengine); the live marketing site
+  is www.sunyur.com and the open platform is open.sunyur.com. No .well-known
+  discovery documents are published on any host.
