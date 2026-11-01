@@ -1,4 +1,4 @@
-# sunyur
+# Sunyur
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,6 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-sunyur is a company surfaced as a portfolio company of qiming and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Sunyur (商越科技 / Beijing Sunyur Network Technology Co., Ltd, 北京商越网络科技有限公司) is a Chinese enterprise procurement digitalization company providing AI-driven procurement solutions for large and medium enterprises. Its products include an intelligent procurement middle-platform (采购中台), an SRM supplier relationship management system, an e-procurement SaaS platform, and a procurement mall (采购商城), helping each customer build a dedicated online, digital, and intelligent enterprise procurement platform to raise efficiency and lower cost. Sunyur operates an open integration platform ("聚贤阁", open.sunyur.com) that connects enterprises to 30+ mainstream e-commerce platforms and 10+ third-party applications through a single accessToken-authenticated API surface. Sunyur is backed by Qiming Venture Partners.
 
-Backed by: qiming — https://sunyur.com
+**Areas:** Company · Procurement · SRM · eProcurement · Supplier Management · Digital Procurement · Enterprise Software · Software-as-a-Service · B2B · China · Artificial Intelligence
+
+## Sunyur on APIs.io
+
+Everything profiled for Sunyur is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sunyur/](https://apis.io/providers/sunyur/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Sunyur Open Platform](https://apis.io/apis/sunyur/sunyur-open-platform/) — Sunyur's enterprise procurement open integration platform ("聚贤阁"). Exposes an accessToken-authenticated API base at https://open.sunyur.com/api that…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Sunyur Authentication](https://apis.io/security/sunyur/sunyur-authentication/)
+- [Sunyur Domain Security](https://apis.io/security/sunyur/sunyur-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.sunyur.com)
+- [Documentation](https://open.sunyur.com/front/#/docs)
+- [Blog](https://www.sunyur.com/blog)
+
+## API Evangelist rating
+
+**Kin Score 12.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 0.0 |
+
+**Agent readiness 5.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sunyur/](https://apis.io/providers/sunyur/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Sunyur: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sunyur/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
